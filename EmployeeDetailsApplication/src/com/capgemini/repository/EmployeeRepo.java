@@ -9,4 +9,5 @@ public interface EmployeeRepo {
 	
 	Employee save(Employee e);
 	List<Employee> findByName(String name);
+	public boolean search(String id);
 }

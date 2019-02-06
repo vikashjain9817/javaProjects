@@ -29,4 +29,13 @@ public class EmployeeRepoImp implements EmployeeRepo{
 		return list;
 	}
 	
+	public boolean search(String id) {
+		for (Map.Entry<String,Employee> entry : employees.entrySet())  {	
+			if(entry.getValue().getId().equals(id)) {
+				return true;
+			}
+		  }
+			return false;
+	}
+	
 }
